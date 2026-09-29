@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KeyMaster — Keyboard Learning Platform</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="logo" data-page="home">
+        <span class="logo__icon">⌨️</span>
+        <span>Key<span class="logo__accent">Master</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#" class="nav__link is-active" data-page="home" data-i18n="nav.home">Bosh sahifa</a>
+        <a href="#" class="nav__link" data-page="explorer" data-i18n="nav.explorer">Klaviatura</a>
+        <a href="#" class="nav__link" data-page="shortcuts" data-i18n="nav.shortcuts">Shortcutlar</a>
+        <a href="#" class="nav__link" data-page="typing" data-i18n="nav.typing">Mashq</a>
+        <a href="#" class="nav__link" data-page="quiz" data-i18n="nav.quiz">Test</a>
+        <a href="#" class="nav__link" data-page="progress" data-i18n="nav.progress">Progress</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-switch" id="langSwitch">
+         <span class="lang-switch__current">UZ</span>
+         </button>
+         <button class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="app" class="app"></main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 KeyMaster — <span data-i18n="footer.tagline">Klaviaturani o'rganishning eng oson yo'li</span></p>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
